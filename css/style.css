@@ -1,0 +1,329 @@
+@font-face {
+    font-family: '汉仪颐和园体';
+    /* 自定义字体名称 */
+    src: url('./汉仪颐和园体\ 2.ttf') format('truetype');
+    /* 字体文件路径 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img {
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.bg {
+    background-image: url(../img/_bj.png);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tiaozhuanbtn {
+    position: fixed;
+    bottom: .5rem;
+    right: .3rem;
+    text-align: right;
+}
+
+.tiaozhuanbtn a {
+    font-size: .5rem
+}
+
+.backBtn {
+    position: fixed;
+    top: .5rem;
+    right: .3rem;
+    text-align: right;
+}
+
+.back1 {
+    width: .8rem;
+}
+
+.backBtn {
+    position: fixed;
+    top: .3rem;
+    right: .3rem;
+    text-align: right;
+    font-size: .5rem
+}
+
+/* 首页icon */
+.icon6 {
+    height: 1.37rem;
+}
+
+.icon7 {
+    height: .3rem;
+}
+
+._map {
+    width: 5.66rem;
+    margin-top: .37rem;
+}
+
+.contBox {
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contBoxInfo {
+    height: 10.83rem;
+    width: 100vw;
+    /* background-color: red; */
+}
+
+/* page1 */
+.iconBox {
+    width: 3.52rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.iconBox::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.08rem;
+    height: 3.56rem;
+    background-color: #9f8059;
+    opacity: .8;
+    left: 1.71rem;
+    top: 0;
+}
+
+.iconBox::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 2.96rem;
+    height: 0.08rem;
+    background-color: #9f8059;
+    opacity: .8;
+    left: .37rem;
+}
+
+.ic1:nth-child(2),
+.ic1:nth-child(1) {
+    margin-bottom: .37rem;
+}
+
+.contBoxInfoTop {
+    display: flex;
+    justify-content: space-between;
+    padding-left: .3rem;
+    padding-right: .5rem;
+
+}
+
+.contBoxInfo .jieshao {
+    font-size: .24rem;
+    font-family: '汉仪颐和园体';
+    color: #5b230a;
+}
+
+.contBoxInfo .fenbu {
+    font-family: '汉仪颐和园体';
+    font-size: 1.5rem;
+    color: #b69266;
+    opacity: 0.9;
+    margin-top: 1.2rem;
+}
+
+.contBoxInfoBom {
+    display: flex;
+    padding-left: .4rem;
+
+}
+
+.contBoxInfoBom img {
+    width: 2.74rem;
+}
+
+.contBoxInfoBom .box5 {
+    margin-left: .66rem;
+}
+
+/* page2 */
+.contBoxInfo2 {
+    height: 11.83rem;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hongshu {
+    width: 3.41rem;
+}
+
+.po1 {
+    position: absolute;
+    top: 0;
+    left: .3rem;
+
+}
+
+.po2 {
+    position: absolute;
+    bottom: 0;
+    right: 0.3rem;
+}
+
+.btnlist {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.btnlist .btna {
+    height: .84rem;
+}
+
+/* page4 */
+.contBoxInfo4 {
+    height: 10.19rem;
+    width: 100vw;
+    position: relative;
+    /*  display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.contBoxInfo4 .contMap {
+    width: 5.15rem;
+    margin-left: 1.18rem;
+    margin-top: 3.06rem;
+}
+
+.contBoxInfo4 .ltIcon {
+    height: 3.35rem;
+    position: absolute;
+    left: 0;
+    top: .02rem;
+}
+
+.contBoxInfo4 .rtIcon {
+    height: 2.37rem;
+    position: absolute;
+    right: 0;
+    top: 1.4rem;
+}
+
+.contBoxInfo4 .lbIcon {
+    height: 3.07rem;
+    position: absolute;
+    left: 0;
+    bottom: .76rem;
+}
+
+.contBoxInfo4 .rbIcon {
+    height: 4.3rem;
+    position: absolute;
+    right: 0;
+    bottom: .13rem;
+}
+
+.contBoxInfo3 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.BigfoodItem .fItem {
+    display: flex;
+    align-items: center;
+    padding-left: .76rem;
+    margin-bottom: .21rem;
+    position: relative;
+}
+
+.BigfoodItem .ftitle img {
+    height: .56rem;
+    margin-left: .52rem;
+}
+
+.BigfoodItem .flef {
+    position: relative;
+}
+
+.BigfoodItem .flef::after {
+    position: absolute;
+    content: '';
+    width: .36rem;
+    height: .36rem;
+    background-color: #865d36;
+    border-radius: 50%;
+    right: -.5rem;
+    top: .3rem;
+}
+.BigfoodItem .flef img {
+    height: 1.33rem;
+}
+
+.BigfoodItem .frig {
+    margin-left: .5rem;
+}
+
+.BigfoodItem .frig img {
+    width: 5rem;
+}
+
+.BigfoodItem .fcont{position: relative;}
+.BigfoodItem .fcont::after{
+    position: absolute;
+    content: '';
+    width: .1rem;
+    background-color: #523315;
+    height: 95%;
+    top: .5rem;
+    left: 2rem;
+    z-index: -1;
+}
+
+.BigfoodItem {}
