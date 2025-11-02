@@ -67,7 +67,7 @@ a {
 }
 
 .back1 {
-    width: .8rem;
+    width: .6rem;
 }
 
 .backBtn {
@@ -302,6 +302,7 @@ a {
     right: -.5rem;
     top: .3rem;
 }
+
 .BigfoodItem .flef img {
     height: 1.33rem;
 }
@@ -314,8 +315,11 @@ a {
     width: 5rem;
 }
 
-.BigfoodItem .fcont{position: relative;}
-.BigfoodItem .fcont::after{
+.BigfoodItem .fcont {
+    position: relative;
+}
+
+.BigfoodItem .fcont::after {
     position: absolute;
     content: '';
     width: .1rem;
@@ -327,3 +331,68 @@ a {
 }
 
 .BigfoodItem {}
+
+/* page5 */
+.contBoxInfo5 {
+    height: 8rem;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contBoxInfo5 .contMap {
+    width: 5.35rem;
+    position: absolute;
+    left: 1.16rem;
+    top: 1.4rem;
+}
+.contBoxInfo5 .contMap::after {
+    content: '';
+    width: 100%;
+    height: .01rem;
+    background-color: red;
+    display: block;
+}
+
+.contBoxInfo5 .ltIcon {
+    height: 2.17rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contBoxInfo5 .rtIcon {
+    height: 2.17rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.contBoxInfo5 .lbIcon {
+    height: 2.85rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contBoxInfo5 .rbIcon {
+    height: 2.14rem;
+    position: absolute;
+    right: 0;
+    bottom: .72rem;
+}
+
+.titpic{
+    height: .38rem;
+    position: fixed;
+    top: .5rem;
+    left: .2rem;
+}
+/* .contBoxInfo5 .ltIcon,
+.contBoxInfo5 .rtIcon,
+.contBoxInfo5 .lbIcon,
+.contBoxInfo5 .rbIcon {
+    display: none;
+} */

@@ -1,0 +1,93 @@
+<!--
+ * @Author: ChengXinYu
+ * @Date: 2025-10-31 21:50:17
+ * @LastEditors: Do not edit
+ * @LastEditTime: 2025-11-02 23:38:28
+ * @FilePath: /minxi/page5.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>'风'味闽西-对应品种</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <script src="./js/js.js"></script>
+
+</head>
+
+<body>
+    <div class="bg"></div>
+    <img class="titpic" src="./img/w1.png" alt="">
+    <div class="contBox">
+        <div class="contBoxInfo5">
+            <img class="contMap animate__animated animate__fadeIn" src="./img/_map.png" alt="">
+            <img class="ltIcon animate__animated animate__fadeInLeft" src="./img/k1.png" alt="">
+            <img class="rtIcon animate__animated animate__fadeInRight" src="./img/k2.png" alt="">
+            <img class="lbIcon animate__animated animate__fadeInLeft" src="./img/k3.png" alt="">
+            <img class="rbIcon animate__animated animate__fadeInRight" src="./img/k4.png" alt="">
+        </div>
+    </div>
+
+    <!-- <div class="tiaozhuanbtn">
+        <a href="page3.html"> <img class="back1" src="./img/back1.png" alt="" /></a>
+    </div> -->
+    <div class="backBtn">
+        <a href="page2.html"> <img class="back1" src="./img/back2.png" alt="" /></a>
+    </div>
+</body>
+<script>
+    // 在页面加载完成后添加以下脚本
+    document.addEventListener('DOMContentLoaded', function () {
+        const map = document.querySelector('.contMap');
+        const ltIcon = document.querySelector('.ltIcon');
+        const rtIcon = document.querySelector('.rtIcon');
+        const lbIcon = document.querySelector('.lbIcon');
+        const rbIcon = document.querySelector('.rbIcon');
+
+        // 隐藏所有区域图标（初始状态）
+        hideAllIcons();
+
+        map.addEventListener('click', function (event) {
+            // 获取地图元素的位置和尺寸
+            const rect = map.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            const width = rect.width;
+            const height = rect.height;
+
+            // 计算点击的是哪个区域
+            const isLeft = x < width / 2;
+            const isTop = y < height / 2;
+
+            // 隐藏所有图标
+            // hideAllIcons();
+
+            // 根据区域显示对应图标
+            if (isLeft && isTop) {
+                // 左上角
+                ltIcon.style.display = 'block';
+            } else if (!isLeft && isTop) {
+                // 右上角
+                rtIcon.style.display = 'block';
+            } else if (isLeft && !isTop) {
+                // 左下角
+                lbIcon.style.display = 'block';
+            } else {
+                // 右下角
+                rbIcon.style.display = 'block';
+            }
+        });
+
+        function hideAllIcons() {
+            ltIcon.style.display = 'none';
+            rtIcon.style.display = 'none';
+            lbIcon.style.display = 'none';
+            rbIcon.style.display = 'none';
+        }
+    });
+</script>
+
+</html>
